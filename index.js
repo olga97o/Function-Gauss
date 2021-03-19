@@ -19,7 +19,7 @@ const memoize = (fn) => {
 
 const sum = memoize((min, max) => {
     if (min < max) {
-        return ((min + max) * (max - min) / 2);
+        return ((min + max) * (max - min + 1) / 2);
     }
 });
 
